@@ -1,0 +1,197 @@
+\hypertarget{classcaffe_1_1io_1_1_transformer}{}\section{caffe.\+io.\+Transformer Class Reference}
+\label{classcaffe_1_1io_1_1_transformer}\index{caffe.\+io.\+Transformer@{caffe.\+io.\+Transformer}}
+
+
+Pre-\/processing.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcaffe_1_1io_1_1_transformer_aad3a0859254dddadbade7e60e624f855}{}def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, inputs)\label{classcaffe_1_1io_1_1_transformer_aad3a0859254dddadbade7e60e624f855}
+
+\item 
+def \hyperlink{classcaffe_1_1io_1_1_transformer_a0b2d73743d661b36853fe3d963bd5fbb}{preprocess} (self, in\+\_\+, data)
+\item 
+def \hyperlink{classcaffe_1_1io_1_1_transformer_a3d048b7f8d255d29c04c2bcce0db318e}{deprocess} (self, in\+\_\+, data)
+\item 
+def \hyperlink{classcaffe_1_1io_1_1_transformer_af0acba3b0fe23e7fe33228600b18279a}{set\+\_\+transpose} (self, in\+\_\+, order)
+\item 
+def \hyperlink{classcaffe_1_1io_1_1_transformer_abd32a70aebb66e66de7567800547b114}{set\+\_\+channel\+\_\+swap} (self, in\+\_\+, order)
+\item 
+def \hyperlink{classcaffe_1_1io_1_1_transformer_aa02e06527de8f0e02d3065bf83b875a9}{set\+\_\+raw\+\_\+scale} (self, in\+\_\+, scale)
+\item 
+def \hyperlink{classcaffe_1_1io_1_1_transformer_a7064401b3aa295a6ab61895563a60d16}{set\+\_\+mean} (self, in\+\_\+, mean)
+\item 
+def \hyperlink{classcaffe_1_1io_1_1_transformer_ab3d72541298e2fb73a884df37e56f65c}{set\+\_\+input\+\_\+scale} (self, in\+\_\+, scale)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classcaffe_1_1io_1_1_transformer_a39504b59a20b17b063c896af4e0147a6}{}{\bfseries inputs}\label{classcaffe_1_1io_1_1_transformer_a39504b59a20b17b063c896af4e0147a6}
+
+\item 
+\hypertarget{classcaffe_1_1io_1_1_transformer_a0a2e0695edb3b47999ed4e9ae42771d4}{}{\bfseries transpose}\label{classcaffe_1_1io_1_1_transformer_a0a2e0695edb3b47999ed4e9ae42771d4}
+
+\item 
+\hypertarget{classcaffe_1_1io_1_1_transformer_aab33f13f4d564b0baddac568ff626e25}{}{\bfseries channel\+\_\+swap}\label{classcaffe_1_1io_1_1_transformer_aab33f13f4d564b0baddac568ff626e25}
+
+\item 
+\hypertarget{classcaffe_1_1io_1_1_transformer_a09f0e65ba030d5ded3dc5e3b229dd16f}{}{\bfseries raw\+\_\+scale}\label{classcaffe_1_1io_1_1_transformer_a09f0e65ba030d5ded3dc5e3b229dd16f}
+
+\item 
+\hypertarget{classcaffe_1_1io_1_1_transformer_a0a55c117f0577883e6d2c1251c01d16d}{}{\bfseries mean}\label{classcaffe_1_1io_1_1_transformer_a0a55c117f0577883e6d2c1251c01d16d}
+
+\item 
+\hypertarget{classcaffe_1_1io_1_1_transformer_a85c5851acbd0956a63742059b75df1c7}{}{\bfseries input\+\_\+scale}\label{classcaffe_1_1io_1_1_transformer_a85c5851acbd0956a63742059b75df1c7}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Pre-\/processing. 
+
+\begin{DoxyVerb}Transform input for feeding into a Net.
+
+Note: this is mostly for illustrative purposes and it is likely better
+to define your own input preprocessing routine for your needs.
+
+Parameters
+----------
+net : a Net for which the input should be prepared
+\end{DoxyVerb}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcaffe_1_1io_1_1_transformer_a3d048b7f8d255d29c04c2bcce0db318e}{}\index{caffe\+::io\+::\+Transformer@{caffe\+::io\+::\+Transformer}!deprocess@{deprocess}}
+\index{deprocess@{deprocess}!caffe\+::io\+::\+Transformer@{caffe\+::io\+::\+Transformer}}
+\subsubsection[{deprocess}]{\setlength{\rightskip}{0pt plus 5cm}def caffe.\+io.\+Transformer.\+deprocess (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{in\+\_\+, }
+\item[{}]{data}
+\end{DoxyParamCaption}
+)}\label{classcaffe_1_1io_1_1_transformer_a3d048b7f8d255d29c04c2bcce0db318e}
+\begin{DoxyVerb}Invert Caffe formatting; see preprocess().
+\end{DoxyVerb}
+ \hypertarget{classcaffe_1_1io_1_1_transformer_a0b2d73743d661b36853fe3d963bd5fbb}{}\index{caffe\+::io\+::\+Transformer@{caffe\+::io\+::\+Transformer}!preprocess@{preprocess}}
+\index{preprocess@{preprocess}!caffe\+::io\+::\+Transformer@{caffe\+::io\+::\+Transformer}}
+\subsubsection[{preprocess}]{\setlength{\rightskip}{0pt plus 5cm}def caffe.\+io.\+Transformer.\+preprocess (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{in\+\_\+, }
+\item[{}]{data}
+\end{DoxyParamCaption}
+)}\label{classcaffe_1_1io_1_1_transformer_a0b2d73743d661b36853fe3d963bd5fbb}
+\begin{DoxyVerb}Format input for Caffe:
+- convert to single
+- resize to input dimensions (preserving number of channels)
+- transpose dimensions to K x H x W
+- reorder channels (for instance color to BGR)
+- scale raw input (e.g. from [0, 1] to [0, 255] for ImageNet models)
+- subtract mean
+- scale feature
+
+Parameters
+----------
+in_ : name of input blob to preprocess for
+data : (H' x W' x K) ndarray
+
+Returns
+-------
+caffe_in : (K x H x W) ndarray for input to a Net
+\end{DoxyVerb}
+ \hypertarget{classcaffe_1_1io_1_1_transformer_abd32a70aebb66e66de7567800547b114}{}\index{caffe\+::io\+::\+Transformer@{caffe\+::io\+::\+Transformer}!set\+\_\+channel\+\_\+swap@{set\+\_\+channel\+\_\+swap}}
+\index{set\+\_\+channel\+\_\+swap@{set\+\_\+channel\+\_\+swap}!caffe\+::io\+::\+Transformer@{caffe\+::io\+::\+Transformer}}
+\subsubsection[{set\+\_\+channel\+\_\+swap}]{\setlength{\rightskip}{0pt plus 5cm}def caffe.\+io.\+Transformer.\+set\+\_\+channel\+\_\+swap (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{in\+\_\+, }
+\item[{}]{order}
+\end{DoxyParamCaption}
+)}\label{classcaffe_1_1io_1_1_transformer_abd32a70aebb66e66de7567800547b114}
+\begin{DoxyVerb}Set the input channel order for e.g. RGB to BGR conversion
+as needed for the reference ImageNet model.
+N.B. this assumes the channels are the first dimension AFTER transpose.
+
+Parameters
+----------
+in_ : which input to assign this channel order
+order : the order to take the channels.
+    (2,1,0) maps RGB to BGR for example.
+\end{DoxyVerb}
+ \hypertarget{classcaffe_1_1io_1_1_transformer_ab3d72541298e2fb73a884df37e56f65c}{}\index{caffe\+::io\+::\+Transformer@{caffe\+::io\+::\+Transformer}!set\+\_\+input\+\_\+scale@{set\+\_\+input\+\_\+scale}}
+\index{set\+\_\+input\+\_\+scale@{set\+\_\+input\+\_\+scale}!caffe\+::io\+::\+Transformer@{caffe\+::io\+::\+Transformer}}
+\subsubsection[{set\+\_\+input\+\_\+scale}]{\setlength{\rightskip}{0pt plus 5cm}def caffe.\+io.\+Transformer.\+set\+\_\+input\+\_\+scale (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{in\+\_\+, }
+\item[{}]{scale}
+\end{DoxyParamCaption}
+)}\label{classcaffe_1_1io_1_1_transformer_ab3d72541298e2fb73a884df37e56f65c}
+\begin{DoxyVerb}Set the scale of preprocessed inputs s.t. the blob = blob * scale.
+N.B. input_scale is done AFTER mean subtraction and other preprocessing
+while raw_scale is done BEFORE.
+
+Parameters
+----------
+in_ : which input to assign this scale factor
+scale : scale coefficient
+\end{DoxyVerb}
+ \hypertarget{classcaffe_1_1io_1_1_transformer_a7064401b3aa295a6ab61895563a60d16}{}\index{caffe\+::io\+::\+Transformer@{caffe\+::io\+::\+Transformer}!set\+\_\+mean@{set\+\_\+mean}}
+\index{set\+\_\+mean@{set\+\_\+mean}!caffe\+::io\+::\+Transformer@{caffe\+::io\+::\+Transformer}}
+\subsubsection[{set\+\_\+mean}]{\setlength{\rightskip}{0pt plus 5cm}def caffe.\+io.\+Transformer.\+set\+\_\+mean (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{in\+\_\+, }
+\item[{}]{mean}
+\end{DoxyParamCaption}
+)}\label{classcaffe_1_1io_1_1_transformer_a7064401b3aa295a6ab61895563a60d16}
+\begin{DoxyVerb}Set the mean to subtract for centering the data.
+
+Parameters
+----------
+in_ : which input to assign this mean.
+mean : mean ndarray (input dimensional or broadcastable)
+\end{DoxyVerb}
+ \hypertarget{classcaffe_1_1io_1_1_transformer_aa02e06527de8f0e02d3065bf83b875a9}{}\index{caffe\+::io\+::\+Transformer@{caffe\+::io\+::\+Transformer}!set\+\_\+raw\+\_\+scale@{set\+\_\+raw\+\_\+scale}}
+\index{set\+\_\+raw\+\_\+scale@{set\+\_\+raw\+\_\+scale}!caffe\+::io\+::\+Transformer@{caffe\+::io\+::\+Transformer}}
+\subsubsection[{set\+\_\+raw\+\_\+scale}]{\setlength{\rightskip}{0pt plus 5cm}def caffe.\+io.\+Transformer.\+set\+\_\+raw\+\_\+scale (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{in\+\_\+, }
+\item[{}]{scale}
+\end{DoxyParamCaption}
+)}\label{classcaffe_1_1io_1_1_transformer_aa02e06527de8f0e02d3065bf83b875a9}
+\begin{DoxyVerb}Set the scale of raw features s.t. the input blob = input * scale.
+While Python represents images in [0, 1], certain Caffe models
+like CaffeNet and AlexNet represent images in [0, 255] so the raw_scale
+of these models must be 255.
+
+Parameters
+----------
+in_ : which input to assign this scale factor
+scale : scale coefficient
+\end{DoxyVerb}
+ \hypertarget{classcaffe_1_1io_1_1_transformer_af0acba3b0fe23e7fe33228600b18279a}{}\index{caffe\+::io\+::\+Transformer@{caffe\+::io\+::\+Transformer}!set\+\_\+transpose@{set\+\_\+transpose}}
+\index{set\+\_\+transpose@{set\+\_\+transpose}!caffe\+::io\+::\+Transformer@{caffe\+::io\+::\+Transformer}}
+\subsubsection[{set\+\_\+transpose}]{\setlength{\rightskip}{0pt plus 5cm}def caffe.\+io.\+Transformer.\+set\+\_\+transpose (
+\begin{DoxyParamCaption}
+\item[{}]{self, }
+\item[{}]{in\+\_\+, }
+\item[{}]{order}
+\end{DoxyParamCaption}
+)}\label{classcaffe_1_1io_1_1_transformer_af0acba3b0fe23e7fe33228600b18279a}
+\begin{DoxyVerb}Set the input channel order for e.g. RGB to BGR conversion
+as needed for the reference ImageNet model.
+
+Parameters
+----------
+in_ : which input to assign this channel order
+order : the order to transpose the dimensions
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+caffe/io.\+py\end{DoxyCompactItemize}

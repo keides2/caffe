@@ -1,0 +1,140 @@
+\hypertarget{namespacecaffe_1_1draw}{}\section{caffe.\+draw Namespace Reference}
+\label{namespacecaffe_1_1draw}\index{caffe.\+draw@{caffe.\+draw}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacecaffe_1_1draw_a3e29c1cd2c9fb6c1cee315b84f9e90e7}{get\+\_\+pooling\+\_\+types\+\_\+dict} ()
+\item 
+def \hyperlink{namespacecaffe_1_1draw_a7e2ae7989557055211c44b1e9c187daa}{determine\+\_\+edge\+\_\+label\+\_\+by\+\_\+layertype} (layer, layertype)
+\item 
+def \hyperlink{namespacecaffe_1_1draw_abc4545db9dda6f8d6db7ae56a049de3c}{determine\+\_\+node\+\_\+label\+\_\+by\+\_\+layertype} (layer, layertype, rankdir)
+\item 
+def \hyperlink{namespacecaffe_1_1draw_a329b4be3aae2dd51158278ea32022512}{choose\+\_\+color\+\_\+by\+\_\+layertype} (layertype)
+\item 
+\hypertarget{namespacecaffe_1_1draw_a223ae748ac0fe5704e90c938e995572a}{}def {\bfseries get\+\_\+pydot\+\_\+graph}\label{namespacecaffe_1_1draw_a223ae748ac0fe5704e90c938e995572a}
+
+\item 
+def \hyperlink{namespacecaffe_1_1draw_af4843d9a765dafcb10193c6165671cb3}{draw\+\_\+net}
+\item 
+def \hyperlink{namespacecaffe_1_1draw_a28ab49b2cc53904012f304298400df40}{draw\+\_\+net\+\_\+to\+\_\+file}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dictionary {\bfseries L\+A\+Y\+E\+R\+\_\+\+S\+T\+Y\+L\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T}
+\item 
+dictionary {\bfseries N\+E\+U\+R\+O\+N\+\_\+\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+Y\+L\+E}
+\item 
+dictionary {\bfseries B\+L\+O\+B\+\_\+\+S\+T\+Y\+L\+E}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyVerb}Caffe network visualization: draw the NetParameter protobuffer.
+
+NOTE: this requires pydot>=1.0.2, which is not included in requirements.txt
+since it requires graphviz and other prerequisites outside the scope of the
+Caffe.
+\end{DoxyVerb}
+ 
+
+\subsection{Function Documentation}
+\hypertarget{namespacecaffe_1_1draw_a329b4be3aae2dd51158278ea32022512}{}\index{caffe\+::draw@{caffe\+::draw}!choose\+\_\+color\+\_\+by\+\_\+layertype@{choose\+\_\+color\+\_\+by\+\_\+layertype}}
+\index{choose\+\_\+color\+\_\+by\+\_\+layertype@{choose\+\_\+color\+\_\+by\+\_\+layertype}!caffe\+::draw@{caffe\+::draw}}
+\subsubsection[{choose\+\_\+color\+\_\+by\+\_\+layertype}]{\setlength{\rightskip}{0pt plus 5cm}def caffe.\+draw.\+choose\+\_\+color\+\_\+by\+\_\+layertype (
+\begin{DoxyParamCaption}
+\item[{}]{layertype}
+\end{DoxyParamCaption}
+)}\label{namespacecaffe_1_1draw_a329b4be3aae2dd51158278ea32022512}
+\begin{DoxyVerb}Define colors for nodes based on the layer type
+\end{DoxyVerb}
+ \hypertarget{namespacecaffe_1_1draw_a7e2ae7989557055211c44b1e9c187daa}{}\index{caffe\+::draw@{caffe\+::draw}!determine\+\_\+edge\+\_\+label\+\_\+by\+\_\+layertype@{determine\+\_\+edge\+\_\+label\+\_\+by\+\_\+layertype}}
+\index{determine\+\_\+edge\+\_\+label\+\_\+by\+\_\+layertype@{determine\+\_\+edge\+\_\+label\+\_\+by\+\_\+layertype}!caffe\+::draw@{caffe\+::draw}}
+\subsubsection[{determine\+\_\+edge\+\_\+label\+\_\+by\+\_\+layertype}]{\setlength{\rightskip}{0pt plus 5cm}def caffe.\+draw.\+determine\+\_\+edge\+\_\+label\+\_\+by\+\_\+layertype (
+\begin{DoxyParamCaption}
+\item[{}]{layer, }
+\item[{}]{layertype}
+\end{DoxyParamCaption}
+)}\label{namespacecaffe_1_1draw_a7e2ae7989557055211c44b1e9c187daa}
+\begin{DoxyVerb}Define edge label based on layer type
+\end{DoxyVerb}
+ \hypertarget{namespacecaffe_1_1draw_abc4545db9dda6f8d6db7ae56a049de3c}{}\index{caffe\+::draw@{caffe\+::draw}!determine\+\_\+node\+\_\+label\+\_\+by\+\_\+layertype@{determine\+\_\+node\+\_\+label\+\_\+by\+\_\+layertype}}
+\index{determine\+\_\+node\+\_\+label\+\_\+by\+\_\+layertype@{determine\+\_\+node\+\_\+label\+\_\+by\+\_\+layertype}!caffe\+::draw@{caffe\+::draw}}
+\subsubsection[{determine\+\_\+node\+\_\+label\+\_\+by\+\_\+layertype}]{\setlength{\rightskip}{0pt plus 5cm}def caffe.\+draw.\+determine\+\_\+node\+\_\+label\+\_\+by\+\_\+layertype (
+\begin{DoxyParamCaption}
+\item[{}]{layer, }
+\item[{}]{layertype, }
+\item[{}]{rankdir}
+\end{DoxyParamCaption}
+)}\label{namespacecaffe_1_1draw_abc4545db9dda6f8d6db7ae56a049de3c}
+\begin{DoxyVerb}Define node label based on layer type
+\end{DoxyVerb}
+ \hypertarget{namespacecaffe_1_1draw_af4843d9a765dafcb10193c6165671cb3}{}\index{caffe\+::draw@{caffe\+::draw}!draw\+\_\+net@{draw\+\_\+net}}
+\index{draw\+\_\+net@{draw\+\_\+net}!caffe\+::draw@{caffe\+::draw}}
+\subsubsection[{draw\+\_\+net}]{\setlength{\rightskip}{0pt plus 5cm}def caffe.\+draw.\+draw\+\_\+net (
+\begin{DoxyParamCaption}
+\item[{}]{caffe\+\_\+net, }
+\item[{}]{rankdir, }
+\item[{}]{ext = {\ttfamily \textquotesingle{}png\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{namespacecaffe_1_1draw_af4843d9a765dafcb10193c6165671cb3}
+\begin{DoxyVerb}Draws a caffe net and returns the image string encoded using the given
+extension.
+
+Parameters
+----------
+caffe_net: a caffe.proto.caffe_pb2.NetParameter protocol buffer.
+ext: the image extension. Default 'png'.
+\end{DoxyVerb}
+ \hypertarget{namespacecaffe_1_1draw_a28ab49b2cc53904012f304298400df40}{}\index{caffe\+::draw@{caffe\+::draw}!draw\+\_\+net\+\_\+to\+\_\+file@{draw\+\_\+net\+\_\+to\+\_\+file}}
+\index{draw\+\_\+net\+\_\+to\+\_\+file@{draw\+\_\+net\+\_\+to\+\_\+file}!caffe\+::draw@{caffe\+::draw}}
+\subsubsection[{draw\+\_\+net\+\_\+to\+\_\+file}]{\setlength{\rightskip}{0pt plus 5cm}def caffe.\+draw.\+draw\+\_\+net\+\_\+to\+\_\+file (
+\begin{DoxyParamCaption}
+\item[{}]{caffe\+\_\+net, }
+\item[{}]{filename, }
+\item[{}]{rankdir = {\ttfamily \textquotesingle{}LR\textquotesingle{}}}
+\end{DoxyParamCaption}
+)}\label{namespacecaffe_1_1draw_a28ab49b2cc53904012f304298400df40}
+\begin{DoxyVerb}Draws a caffe net, and saves it to file using the format given as the
+file extension. Use '.raw' to output raw text that you can manually feed
+to graphviz to draw graphs.
+\end{DoxyVerb}
+ \hypertarget{namespacecaffe_1_1draw_a3e29c1cd2c9fb6c1cee315b84f9e90e7}{}\index{caffe\+::draw@{caffe\+::draw}!get\+\_\+pooling\+\_\+types\+\_\+dict@{get\+\_\+pooling\+\_\+types\+\_\+dict}}
+\index{get\+\_\+pooling\+\_\+types\+\_\+dict@{get\+\_\+pooling\+\_\+types\+\_\+dict}!caffe\+::draw@{caffe\+::draw}}
+\subsubsection[{get\+\_\+pooling\+\_\+types\+\_\+dict}]{\setlength{\rightskip}{0pt plus 5cm}def caffe.\+draw.\+get\+\_\+pooling\+\_\+types\+\_\+dict (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{namespacecaffe_1_1draw_a3e29c1cd2c9fb6c1cee315b84f9e90e7}
+\begin{DoxyVerb}Get dictionary mapping pooling type number to type name
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\hypertarget{namespacecaffe_1_1draw_a90ed854dd2a19d06b9843248c390d6a5}{}\index{caffe\+::draw@{caffe\+::draw}!B\+L\+O\+B\+\_\+\+S\+T\+Y\+L\+E@{B\+L\+O\+B\+\_\+\+S\+T\+Y\+L\+E}}
+\index{B\+L\+O\+B\+\_\+\+S\+T\+Y\+L\+E@{B\+L\+O\+B\+\_\+\+S\+T\+Y\+L\+E}!caffe\+::draw@{caffe\+::draw}}
+\subsubsection[{B\+L\+O\+B\+\_\+\+S\+T\+Y\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}dictionary caffe.\+draw.\+B\+L\+O\+B\+\_\+\+S\+T\+Y\+L\+E}\label{namespacecaffe_1_1draw_a90ed854dd2a19d06b9843248c390d6a5}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \{\textcolor{stringliteral}{'shape'}: \textcolor{stringliteral}{'octagon'},
+2               \textcolor{stringliteral}{'fillcolor'}: \textcolor{stringliteral}{'#E0E0E0'},
+3               \textcolor{stringliteral}{'style'}: \textcolor{stringliteral}{'filled'}\}
+\end{DoxyCode}
+\hypertarget{namespacecaffe_1_1draw_a2d924dfcc48367553fc1a36a9bbfa805}{}\index{caffe\+::draw@{caffe\+::draw}!L\+A\+Y\+E\+R\+\_\+\+S\+T\+Y\+L\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T@{L\+A\+Y\+E\+R\+\_\+\+S\+T\+Y\+L\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T}}
+\index{L\+A\+Y\+E\+R\+\_\+\+S\+T\+Y\+L\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T@{L\+A\+Y\+E\+R\+\_\+\+S\+T\+Y\+L\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T}!caffe\+::draw@{caffe\+::draw}}
+\subsubsection[{L\+A\+Y\+E\+R\+\_\+\+S\+T\+Y\+L\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T}]{\setlength{\rightskip}{0pt plus 5cm}dictionary caffe.\+draw.\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+Y\+L\+E\+\_\+\+D\+E\+F\+A\+U\+L\+T}\label{namespacecaffe_1_1draw_a2d924dfcc48367553fc1a36a9bbfa805}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \{\textcolor{stringliteral}{'shape'}: \textcolor{stringliteral}{'record'},
+2                        \textcolor{stringliteral}{'fillcolor'}: \textcolor{stringliteral}{'#6495ED'},
+3                        \textcolor{stringliteral}{'style'}: \textcolor{stringliteral}{'filled'}\}
+\end{DoxyCode}
+\hypertarget{namespacecaffe_1_1draw_a72f7eccee11a4375210203cf02bea0f8}{}\index{caffe\+::draw@{caffe\+::draw}!N\+E\+U\+R\+O\+N\+\_\+\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+Y\+L\+E@{N\+E\+U\+R\+O\+N\+\_\+\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+Y\+L\+E}}
+\index{N\+E\+U\+R\+O\+N\+\_\+\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+Y\+L\+E@{N\+E\+U\+R\+O\+N\+\_\+\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+Y\+L\+E}!caffe\+::draw@{caffe\+::draw}}
+\subsubsection[{N\+E\+U\+R\+O\+N\+\_\+\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+Y\+L\+E}]{\setlength{\rightskip}{0pt plus 5cm}dictionary caffe.\+draw.\+N\+E\+U\+R\+O\+N\+\_\+\+L\+A\+Y\+E\+R\+\_\+\+S\+T\+Y\+L\+E}\label{namespacecaffe_1_1draw_a72f7eccee11a4375210203cf02bea0f8}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+1 = \{\textcolor{stringliteral}{'shape'}: \textcolor{stringliteral}{'record'},
+2                       \textcolor{stringliteral}{'fillcolor'}: \textcolor{stringliteral}{'#90EE90'},
+3                       \textcolor{stringliteral}{'style'}: \textcolor{stringliteral}{'filled'}\}
+\end{DoxyCode}
